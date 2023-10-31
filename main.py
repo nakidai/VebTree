@@ -1,9 +1,4 @@
 class VebTree:
-    size: int
-    tree: list
-    tree_min: (int, None)
-    tree_max: (int, None)
-
     def __init__(self, size):
         self.size = size
         if size > 1:
