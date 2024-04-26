@@ -12,6 +12,9 @@ class VebTree:
     def is_empty(self) -> bool:
         return self.tree_min is None
 
+    def __bool__(self) -> bool:
+        return self.is_empty()
+
     def high(self, x: int) -> int:
         return x >> (self.size >> 1)
 
